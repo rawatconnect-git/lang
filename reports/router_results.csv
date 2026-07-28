@@ -1,0 +1,11 @@
+test_id,user_input,expected_actions,actual_actions,status,execution_time,error,execution_date
+RT001,lookup himanshu,lookup,lookup,PASS,0.0,,2026-07-07 16:05:32
+RT002,reset password himanshu,reset,reset,PASS,0.0,,2026-07-07 16:05:32
+RT003,status vpn,"status,kb","status,kb",PASS,0.0,,2026-07-07 16:05:32
+RT004,2+2,calculator,calculator,PASS,0.0,,2026-07-07 16:05:32
+RT005,vpn issue,kb,kb,PASS,0.0,,2026-07-07 16:05:32
+RT006,lookup himanshu reset password himanshu,"lookup,reset","lookup,reset",PASS,0.0,,2026-07-07 16:05:32
+RT007,create ticket for vpn issue,"ticket,kb","ticket,kb",PASS,0.0,,2026-07-07 16:05:32
+RT008,random text,kb,kb,PASS,0.0,,2026-07-07 16:05:32
+RT009,lookup john and status vpn,"lookup,status,kb","lookup,status,kb",PASS,0.0,,2026-07-07 16:05:32
+RT010,reset password himanshu and create ticket,"reset,ticket","reset,ticket",PASS,0.0,,2026-07-07 16:05:32

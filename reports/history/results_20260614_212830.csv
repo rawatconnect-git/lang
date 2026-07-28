@@ -1,0 +1,47 @@
+test_id,tool_name,input,expected,actual,status,execution_time,error,execution_date
+UL001,user_lookup,himanshu,QA Engineer,QA Engineer,PASS,0.0,,2026-06-14 21:28:30
+UL002,user_lookup,john,DevOps Engineer,DevOps Engineer,PASS,0.0,,2026-06-14 21:28:30
+UL003,user_lookup,alice,HR Manager,HR Manager,PASS,0.0,,2026-06-14 21:28:30
+UL004,user_lookup,abc,User not found,User not found,PASS,0.0,,2026-06-14 21:28:30
+UL005,user_lookup,HIMANSHU,QA Engineer,QA Engineer,PASS,0.0,,2026-06-14 21:28:30
+UL006,user_lookup,JOHN,DevOps Engineer,DevOps Engineer,PASS,0.0,,2026-06-14 21:28:30
+UL007,user_lookup,ALICE,HR Manager,HR Manager,PASS,0.0,,2026-06-14 21:28:30
+UL008,user_lookup,Himanshu,QA Engineer,QA Engineer,PASS,0.0,,2026-06-14 21:28:30
+UL009,user_lookup,JoHn,DevOps Engineer,DevOps Engineer,PASS,0.0,,2026-06-14 21:28:30
+UL010,user_lookup,Alice,HR Manager,HR Manager,PASS,0.0,,2026-06-14 21:28:30
+UL011,user_lookup,"""""",User not found,User not found,PASS,0.0,,2026-06-14 21:28:30
+UL012,user_lookup,""" """,User not found,User not found,PASS,0.0,,2026-06-14 21:28:30
+UL013,user_lookup,""" """,User not found,User not found,PASS,0.0,,2026-06-14 21:28:30
+UL014,user_lookup,himanshu123,User not found,User not found,PASS,0.0,,2026-06-14 21:28:30
+UL015,user_lookup,john1,User not found,User not found,PASS,0.0,,2026-06-14 21:28:30
+UL016,user_lookup,@#$%,User not found,User not found,PASS,0.0,,2026-06-14 21:28:30
+UL017,user_lookup,user@test.com,User not found,User not found,PASS,0.0,,2026-06-14 21:28:30
+UL018,user_lookup,12345,User not found,EXCEPTION,FAIL,0.0,"1 validation error for user_lookup
+username
+  Input should be a valid string [type=string_type, input_value=12345, input_type=int]
+    For further information visit https://errors.pydantic.dev/2.13/v/string_type",2026-06-14 21:28:30
+UL019,user_lookup,verylongusernameverylongusername,User not found,User not found,PASS,0.0,,2026-06-14 21:28:30
+UL020,user_lookup,himanshu_rawat,User not found,User not found,PASS,0.0,,2026-06-14 21:28:30
+UL021,user_lookup,nan,User not found*,EXCEPTION,FAIL,0.0,"1 validation error for user_lookup
+username
+  Input should be a valid string [type=string_type, input_value=nan, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.13/v/string_type",2026-06-14 21:28:30
+UL022,user_lookup,nan,User not found*,EXCEPTION,FAIL,0.0,"1 validation error for user_lookup
+username
+  Input should be a valid string [type=string_type, input_value=nan, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.13/v/string_type",2026-06-14 21:28:30
+UL023,user_lookup,himanshu,User not found,QA Engineer,FAIL,0.001,"Test ID: UL023 | Expected: User not found | Actual: QA Engineer
+assert 'QA Engineer' == 'User not found'
+  
+  [0m[91m- User not found[39;49;00m[90m[39;49;00m
+  [92m+ QA Engineer[39;49;00m[90m[39;49;00m",2026-06-14 21:28:30
+UL024,user_lookup,himanshu,User not found,QA Engineer,FAIL,0.0,"Test ID: UL024 | Expected: User not found | Actual: QA Engineer
+assert 'QA Engineer' == 'User not found'
+  
+  [0m[91m- User not found[39;49;00m[90m[39;49;00m
+  [92m+ QA Engineer[39;49;00m[90m[39;49;00m",2026-06-14 21:28:30
+UL025,user_lookup,himanshu,User not found,QA Engineer,FAIL,0.0,"Test ID: UL025 | Expected: User not found | Actual: QA Engineer
+assert 'QA Engineer' == 'User not found'
+  
+  [0m[91m- User not found[39;49;00m[90m[39;49;00m
+  [92m+ QA Engineer[39;49;00m[90m[39;49;00m",2026-06-14 21:28:30

@@ -1,0 +1,11 @@
+test_id,tool_name,input,expected,actual,status,execution_time,error,execution_date
+RT001,router_node,lookup himanshu,['lookup'],['lookup'],PASS,0.0,,2026-07-07 16:06:32
+RT002,router_node,reset password himanshu,['reset'],['reset'],PASS,0.0,,2026-07-07 16:06:32
+RT003,router_node,status vpn,"['status', 'kb']","['status', 'kb']",PASS,0.0,,2026-07-07 16:06:32
+RT004,router_node,2+2,['calculator'],['calculator'],PASS,0.0,,2026-07-07 16:06:32
+RT005,router_node,vpn issue,['kb'],['kb'],PASS,0.0,,2026-07-07 16:06:32
+RT006,router_node,lookup himanshu reset password himanshu,"['lookup', 'reset']","['lookup', 'reset']",PASS,0.0,,2026-07-07 16:06:32
+RT007,router_node,create ticket for vpn issue,"['ticket', 'kb']","['ticket', 'kb']",PASS,0.0,,2026-07-07 16:06:32
+RT008,router_node,random text,['kb'],['kb'],PASS,0.0,,2026-07-07 16:06:32
+RT009,router_node,lookup john and status vpn,"['lookup', 'status', 'kb']","['lookup', 'status', 'kb']",PASS,0.0,,2026-07-07 16:06:32
+RT010,router_node,reset password himanshu and create ticket,"['reset', 'ticket']","['reset', 'ticket']",PASS,0.0,,2026-07-07 16:06:32
